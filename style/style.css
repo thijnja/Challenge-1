@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Nisc';
+  src: url('../fonts/NISC18030.ttf'); 
+} 
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nisc', Arial;
+    color: white;    
+}
+
+body{
+	background-image: url("../images/wereld.png");
+}
+
+h1, figure{
+    font-size: 1.2em;
+    border-bottom: 0;
+    text-align: center;
+}
+
+#logo {
+    display: block;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+	margin: auto;
+	width: 92.5%;
+}
+
+article {
+	display: flex;
+    background: white;
+    opacity: 10%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.5em;
+}
+
+.pie, .bar, .info {
+	height: 25rem;
+}
+
+/* Alle mobiele stijling */
+
+
+/* iPad  inch */
+@media only screen and (min-width: 600px) and (max-width: 1000px) {  
+ main {
+    display: grid;
+    grid-template-columns: 1fr ;
+    }
+
+
+/* Laptop 1366 X 768  width */
+/* Media querie - Laptop */
+@media only screen and (min-width: 1000px) and (max-width: 1700px){
+
+}
+
