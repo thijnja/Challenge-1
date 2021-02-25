@@ -47,6 +47,20 @@ article {
 	height: 25rem;
 }
 
+#snelheidsbalk {
+    position: relative;
+    background-color: black;
+    margin: 30px;
+    border-radius: 1em;
+}
+
+#balk {
+    background-color: green;
+    width: 0px ;
+    height: 20px;
+    border-radius: 1em;
+}
+
 /* Alle mobiele stijling */
 
 
