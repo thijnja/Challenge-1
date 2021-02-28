@@ -1,22 +1,4 @@
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'line',
 
-    // The data for our dataset
-    data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-        datasets: [{
-            label: 'My First dataset',
-            backgroundColor: 'rgb(255, 255, 255)',
-            borderColor: 'rgb(255, 255, 255)',
-            data: [0, 10, 5, 2, 20, 30, 45]
-        }]
-    },
-
-    // Configuration options go here
-    options: {}
-});
 
 /* document.getElementById('doughnut');
 var myDoughnutChart = new Chart(ctx, {
@@ -37,7 +19,7 @@ var myDoughnutChart = new Chart(ctx, {
 */
 
 
-  
+// Ik heb voor de datavisualisatie chart.js gebruikt. //  
 
     var ctz = document.getElementById('doughnut')
 
@@ -48,13 +30,16 @@ var myDoughnutChart = new Chart(ctx, {
                     data: [
                         10, 90
                     ],
-                    backgroundColor: 'rgb(58, 255, 36)',
+                    backgroundColor: [
+                    'rgb(255, 0, 0)',
+                    'rgb(58, 255, 36)'
+                    ],
                     
                     label: 'Dataset 1'
                 }],
                 labels: [
-                    'Red',
-                    'Orange',
+                    'Verbruikt',
+                    'Resterend',
                 ]
             },
             options: {
@@ -64,7 +49,7 @@ var myDoughnutChart = new Chart(ctx, {
                 },
                 title: {
                     display: true,
-                    text: 'Vloeistoffen aanwezig'
+                    text: 'Brandstof'
                 },
                 animation: {
                     animateScale: true,
@@ -73,6 +58,26 @@ var myDoughnutChart = new Chart(ctx, {
             }
         });
 
-        
+
+
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgb(255, 255, 255)',
+            borderColor: 'rgb(255, 255, 255)',
+            data: [0, 10, 5, 2, 20, 30, 45]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});    
 
       

@@ -44,7 +44,7 @@ article {
 }
 
 .pie, .bar, .info {
-	height: 25rem;
+	max-height: 500px;
 }
 
 #snelheidsbalk {
@@ -70,8 +70,10 @@ article {
     display: grid;
     grid-template-columns: 1fr ;
     }
-
-
+    .pie, .bar, .info {
+        height: 50%;
+    }
+}
 /* Laptop 1366 X 768  width */
 /* Media querie - Laptop */
 @media only screen and (min-width: 1000px) and (max-width: 1700px){
