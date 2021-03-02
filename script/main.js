@@ -58,6 +58,44 @@ var myDoughnutChart = new Chart(ctx, {
             }
         });
 
+var ctz = document.getElementById('doughnut2')
+
+        var myDoughnut = new Chart(ctz, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [
+                        30, 70
+                    ],
+                    backgroundColor: [
+                    'rgb(255, 0, 0)',
+                    'rgb(58, 255, 36)'
+                    ],
+                    
+                    label: 'Dataset 1'
+                }],
+                labels: [
+                    'Verbruikt',
+                    'Resterend',
+                ]
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Elektriciteit (in %)'
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true
+                }
+            }
+        });
+
+
 
 
 var ctx = document.getElementById('myChart').getContext('2d');
@@ -67,12 +105,12 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: ['0 uur', '2 uur', '4 uur', '6 uur', '8 uur', '10 uur', '12 uur'],
         datasets: [{
-            label: 'My First dataset',
-            backgroundColor: 'rgb(255, 255, 255)',
-            borderColor: 'rgb(255, 255, 255)',
-            data: [0, 10, 5, 2, 20, 30, 45]
+            label: 'Totaal afgelegde miljoenen kilometers per 2 uur',
+            backgroundColor: 'rgb(0, 128, 255)',
+            borderColor: 'rgb(0, 128, 255)',
+            data: [3000, 2080, 1500, 1400, 1400, 3000, 4500]
         }]
     },
 
