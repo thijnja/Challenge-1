@@ -1,14 +1,13 @@
 // Ik heb voor de eerste drie datavisualisaties chart.js gebruikt en de laatste heb ik zelf gemaakt. 
 
 
-Chart.defaults.global.defaultFontFamily = "'Arial';";
-Chart.defaults.global.defaultFontColor = 'black';
 
 
 // Javascript voor de brandstof meter.  
 
     var ctz = document.getElementById('doughnut')
-
+Chart.defaults.global.defaultFontFamily = "'Poppins', Arial';";
+Chart.defaults.global.defaultFontColor = 'black';
         var myDoughnut = new Chart(ctz, {
             type: 'doughnut',
             data: {
@@ -35,11 +34,17 @@ Chart.defaults.global.defaultFontColor = 'black';
                 },
                 title: {
                     display: true,
-                    text: 'Brandstof'
+                    text: 'Brandstof',
+                    fontFamily: 'Poppins'
                 },
                 animation: {
                     animateScale: true,
                     animateRotate: true
+                }
+            },
+            scale: {
+                ticks: {
+                    fontSize: 29,
                 }
             }
         });
@@ -56,7 +61,7 @@ var ctz = document.getElementById('doughnut2')
                     ],
                     backgroundColor: [
                     'rgb(255, 0, 0)',
-                    'rgb(58, 255, 36)'
+                    'rgb(255, 226, 28)'
                     ],
                     
                     label: 'Dataset 1'
@@ -73,7 +78,8 @@ var ctz = document.getElementById('doughnut2')
                 },
                 title: {
                     display: true,
-                    text: 'Elektriciteit (in %)'
+                    text: 'Elektriciteit (in %)',
+                    fontFamily: 'Poppins'
                 },
                 animation: {
                     animateScale: true,
@@ -94,12 +100,27 @@ var chart = new Chart(ctx, {
     data: {
         labels: ['0 uur', '2 uur', '4 uur', '6 uur', '8 uur', '10 uur', '12 uur'],
         datasets: [{
-            label: 'Totaal afgelegde miljoenen kilometers per 2 uur',
+            label: 'x miljoen',
             backgroundColor: 'rgb(0, 128, 255)',
             borderColor: 'rgb(0, 128, 255)',
             data: [3000, 2080, 1500, 1400, 1400, 3000, 4500]
         }]
     },
+    options: {
+        responsive: true,
+        legend: {
+            position: 'top',
+        },
+        title: {
+            display: true,
+            text: 'Totaal aantal afgelegde kilometers per 2 uur',
+            fontFamily: 'Poppins'
+        },
+        animation: {
+            animateScale: true,
+            animateRotate: true
+        }
+    }
 });    
 
       

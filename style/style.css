@@ -93,18 +93,18 @@ p {
 /* iPad scherm */
 @media only screen and (min-width: 700px) and (max-width: 1000px) {  
     main {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-column-gap: 5%;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 5%;
     }
 
     .pie, .elektra, .bar, .info {
-    width: auto;
-    max-height: 270px;
+        width: auto;
+        max-height: 270px;
     }
 
     .info {
-    display:block;
+        display:block;
     }
    
 }
@@ -112,13 +112,14 @@ p {
 /* Media querie - Laptop */
 @media only screen and (min-width: 1000px) and (max-width: 1700px){
     main {
-    display: grid;
-    grid-template-columns: 66.66% 30% ;
-    grid-column-gap: 5%;
+        display: grid;
+        grid-template-columns: 66.66% 30% ;
+        grid-column-gap: 5%;
     }
 
     .info {
         display:block;
+        font-size: 23px;
     }
 
     .elektra, .info {
@@ -129,13 +130,18 @@ p {
 /* Media querie - Desktop */
 @media only screen and (min-width: 1700px) {
     main {
-    display: grid;
-    grid-template-columns: 75% 25% ;
-    grid-column-gap: 5%;
+        display: grid;
+        grid-template-columns: 75% 25% ;
+        grid-column-gap: 5%;
     }
 
     .info {
-        display:block;
+        display: block;
+        font-size: 25px;
+    }
+
+    .elektra, .info {
+        height: 200px;
     }
 
 }
