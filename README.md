@@ -2,5 +2,8 @@
 
 Ik heb voor Challenge 1 gebruik gemaakt van chart.js datavisualisaties en zelf datavisualisaties gemaakt.
 
-Met dit dashboard kan er makkelijk overzicht worden gehouden voor de reizigers van het ITS.
+
+Met dit dashboard kan er makkelijk overzicht worden gehouden voor de reizigers van het ITS. De link naar het dashboard is: https://thijnja.github.io/Challenge-1/
+
+
  
