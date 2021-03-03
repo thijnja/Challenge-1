@@ -1,36 +1,26 @@
+/* Hier komt de main stijling (voor mobiel) */
 @font-face {
   font-family: 'Poppins';
   src: url('../fonts/Poppins-Light.ttf'); 
 } 
 
-/*
-#doughnut {
-  grid-area: doughnut;
-} 
-
-#doughnut2 {
-  grid-area: doughnuts;
-} 
-
-.bar {
-  grid-area: bar;
-} 
-
-.info {
-  grid-area: info;
-} */
 
 body {
     width: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', Arial;
-    color: white;    
+    color: white;  
+    background-image: url("../images/wereld.png");
+    background-size: cover;  
 }
 
-body{
-	background-image: url("../images/wereld.png");
+main {
+    margin: auto;
+    width: 92.5%;
 }
+
+/* Stijling voor de header */
 
 h1, figure{
     font-size: 1.2em;
@@ -45,10 +35,8 @@ h1, figure{
     margin-right: auto;
 }
 
-main {
-	margin: auto;
-	width: 92.5%;
-}
+/* Stijling voor de articles */
+
 
 article {
 	display: flex;
@@ -67,6 +55,16 @@ p {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
+/* Stijling voor de eten- en waterbalk */
+
+.eten p, .water p {
+    color: black;
+}
+
+.eten, .water {
+    display: inline-flex;
+}
+
 #etensbalk, #waterbalk {
     position: relative;
     background-color: black;
@@ -83,8 +81,6 @@ p {
     border-radius: 1em;
 }
 
-
-
 #balk2 {
     background-color: rgb(0, 128, 255);
     width: 6em;
@@ -92,12 +88,11 @@ p {
     border-radius: 1em;
 }
 
-/* Alle mobiele stijling */
 
 
-/* iPad  inch */
+/* iPad scherm */
 @media only screen and (min-width: 700px) and (max-width: 1000px) {  
- main {
+    main {
     display: grid;
     grid-template-columns: 45% 45%;
     grid-column-gap: 5%;
@@ -108,26 +103,26 @@ p {
     max-height: 270px;
     }
 
-
+    .info {
+    display:block;
+    }
    
 }
-/* Laptop 1366 X 768  width */
+
 /* Media querie - Laptop */
 @media only screen and (min-width: 1000px) and (max-width: 1700px){
     main {
     display: grid;
     grid-template-columns: 66.66% 30% ;
     grid-column-gap: 5%;
-   /*grid-template-areas:  
-          "bar bar bar"
-          "info info info"
-          "doughnut doughnut doughnut"
-          "doughnuts doughnuts doughnuts"
+    }
 
-          ;*/
+    .info {
+        display:block;
     }
 }
 
+/* Media querie - Desktop */
 @media only screen and (min-width: 1700px) {
     main {
     display: grid;
@@ -135,5 +130,8 @@ p {
     grid-column-gap: 5%;
     }
 
+    .info {
+        display:block;
+    }
 
 }

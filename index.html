@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SpaceX Dashboard</title>
-	<link href="style/style.css" rel="stylesheet" as="style">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script src="script/main.js" defer></script>
-   
+    <script src="script/main.js" defer></script>  
 </head>
+
 <body>
 	<header>
         <figure>
@@ -17,23 +17,24 @@
         <h1>Interplanetary Transport System Interface</h1>
     </header>
     <main>
-       
     	<article class="grid-item pie"><canvas id="doughnut"></canvas></article>
         <article class="grid-item pie"><canvas id="doughnut2"></canvas></article>
     	<article class="grid-item bar"><canvas id="myChart"></canvas></article>
     	<article class="grid-item info">
-            <p>Eten:</p>
-                <div id="etensbalk">
-                    <div id="balk"></div>
-                </div>
-            <p>Water:</p>
-                <div id="waterbalk">
-                    <div id="balk2"></div>
-                </div>
+            <div class="eten">
+                <p>Eten:</p>
+                    <div id="etensbalk">
+                        <div id="balk"></div>
+                    </div>
+            </div>
+            <div class="water">
+                <p>Water:</p>
+                    <div id="waterbalk">
+                        <div id="balk2"></div>
+                    </div>
+            </div>
         </article>
-        
-
     </main>
-
 </body>
+
 </html>

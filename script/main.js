@@ -1,4 +1,5 @@
-
+Chart.defaults.global.defaultFontFamily = "'Arial';";
+Chart.defaults.global.defaultFontColor = 'black';
 
 /* document.getElementById('doughnut');
 var myDoughnutChart = new Chart(ctx, {
