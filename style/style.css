@@ -51,7 +51,7 @@ p {
     margin-top: 7%;
 }
 
-.pie, .bar, .info {
+.pie, .elektra, .bar, .info {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -98,7 +98,7 @@ p {
     grid-column-gap: 5%;
     }
 
-    .pie, .bar, .info {
+    .pie, .elektra, .bar, .info {
     width: auto;
     max-height: 270px;
     }
@@ -119,6 +119,10 @@ p {
 
     .info {
         display:block;
+    }
+
+    .elektra, .info {
+        height: 200px;
     }
 }
 
